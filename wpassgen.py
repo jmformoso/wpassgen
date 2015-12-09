@@ -10,14 +10,16 @@ random.seed = (os.urandom(1024))
 if len(sys.argv) >= 2:
 	longitud = int(sys.argv[1]) # longitud elegida por el usuario
 
-	if (str(sys.argv[2]) == "-l"):
-		caracteres = string.ascii_letters # solo letras
+	if len(sys.argv) >= 3:
+		if (str(sys.argv[2]) == "-l"):
+			caracteres = string.ascii_letters # solo letras
 
-	if (str(sys.argv[2]) == "-n"):
-		caracteres = string.digits # solo números
+		if (str(sys.argv[2]) == "-n"):
+			caracteres = string.digits # solo números
 
-	if (str(sys.argv[2]) == "-nl"):
-		caracteres = string.digits + string.ascii_letters # letras y números
+		if (str(sys.argv[2]) == "-nl"):
+			caracteres = string.digits + string.ascii_letters # letras y números
+
 
 else:
 	longitud = 10 # longitud por defecto
