@@ -1,5 +1,5 @@
 # -*- coding: utf-8
-# v0.1.2
+# v0.1.3
 # by jtmeros
 
 import sys, os, string, random
@@ -24,6 +24,9 @@ if len(sys.argv) >= 2:
 
 		if (str(sys.argv[2]) == "-s"):
 			caracteres = '!@#$%+&*()' # solo símbolos
+
+		if (str(sys.argv[2]) == "-h"):
+			caracteres = '1234567890ABCDEF' # hexadecimal
 
 		if (str(sys.argv[2]) == "-nl"):
 			caracteres = string.digits + string.ascii_letters # letras y números
