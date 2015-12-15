@@ -1,5 +1,5 @@
 # -*- coding: utf-8
-# v0.1.3
+# v0.1.4
 # by jtmeros
 
 import sys, os, string, random
@@ -19,18 +19,29 @@ if len(sys.argv) >= 2:
 		if (str(sys.argv[2]) == "-l"):
 			caracteres = string.ascii_letters # solo letras
 
+		if (str(sys.argv[2]) == "-ll"):
+			caracteres = string.ascii_lowercase #solo letras minúsculas
+
+		if (str(sys.argv[2]) == "-lL"):
+			caracteres = string.ascii_uppercase #solo letras mayúsculas
+
 		if (str(sys.argv[2]) == "-n"):
 			caracteres = string.digits # solo números
 
 		if (str(sys.argv[2]) == "-s"):
-			caracteres = '!@#$%+&*()' # solo símbolos
+			caracteres = '!@#$%+&*-' # solo símbolos
+
+		if (str(sys.argv[2]) == "-p"):
+			caracteres = string.punctuation # solo signos puntuación
 
 		if (str(sys.argv[2]) == "-h"):
-			caracteres = '1234567890ABCDEF' # hexadecimal
+			caracteres = string.hexdigits # hexadecimal
 
 		if (str(sys.argv[2]) == "-nl"):
 			caracteres = string.digits + string.ascii_letters # letras y números
 
+		if (str(sys.argv[2]) == "-ns"):
+			caracteres = string.digits + '!@#$%+&*-' # números y símbolos
 
 else:
 	longitud = 10 # longitud por defecto
