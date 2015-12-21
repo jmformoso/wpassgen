@@ -3,10 +3,15 @@
 <p>Estas son las opciones:</p>
 <ul>
 <li>"-l" -> solo letras</li>
+<li>"-ll" -> solo letras minúsculas</li>
+<li>"-lL" -> solo letras mayúsculas</li>
 <li>"-n" -> solo números</li>
 <li>"-s" -> solo símbolos</li>
+<li>"-o" -> solo signos de puntuación</li>
 <li>"-h" -> hexagesimal</li>
 <li>"-nl" -> números y letras</li>
+<li>"-ns" -> números y símbolos</li>
+<li>"-ls" -> letras y símbolos</li>
 </ul>
 <p>Ejemplos de uso:</p>
 <ul>

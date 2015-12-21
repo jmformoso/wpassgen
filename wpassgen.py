@@ -4,7 +4,7 @@
 
 import sys, os, string, random
 
-caracteres = string.ascii_letters + string.digits + '!@#$%+&*()' # string que incluye letras, números y caracteres especiales
+caracteres = string.ascii_letters + string.digits + '!@#$%+&*-' # string que incluye letras, números y caracteres especiales
 random.seed = (os.urandom(1024))
 
 if len(sys.argv) >= 2:
@@ -42,6 +42,9 @@ if len(sys.argv) >= 2:
 
 		if (str(sys.argv[2]) == "-ns"):
 			caracteres = string.digits + '!@#$%+&*-' # números y símbolos
+
+		if (str(sys.argv[2]) == "-ls"):
+			caracteres = string.ascii_letters + '!@#$%+&*-' # letras y símbolos
 
 else:
 	longitud = 10 # longitud por defecto
