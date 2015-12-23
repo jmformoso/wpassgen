@@ -18,4 +18,5 @@
 <li>python wpassgen.py -> devuelve una contraseña de 10 caracteres (por defecto) de longitud con letras, números y símbolos.</li>
 <li>python wpassgen.py 11 -> devuelve uan contraseña de 11 caracteres de longitud con letras, números y símbolos.</li>
 <li>python wpassgen.py 12 -n -> devuelve una contraseña de 12 con solo números.</li>
+<li>python wpassgen.py -n -> devuelve una contraseña de 10 caracteres (por defecto) de longitud con solo números.</li>
 </ul>
