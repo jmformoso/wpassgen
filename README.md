@@ -8,7 +8,7 @@
 <li>"-n" -> solo números</li>
 <li>"-s" -> solo símbolos</li>
 <li>"-o" -> solo signos de puntuación</li>
-<li>"-h" -> hexagesimal</li>
+<li>"-h" -> hexadecimal</li>
 <li>"-nl" -> números y letras</li>
 <li>"-ns" -> números y símbolos</li>
 <li>"-ls" -> letras y símbolos</li>
