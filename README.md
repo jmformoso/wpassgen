@@ -20,3 +20,4 @@
 <li>python wpassgen.py 12 -n -> devuelve una contraseña de 12 con solo números.</li>
 <li>python wpassgen.py -n -> devuelve una contraseña de 10 caracteres (por defecto) de longitud con solo números.</li>
 </ul>
+<p>Demo con algunas opciones implementadas en <a href="https://wikitel.org/wpassgen" target="_blank">wikitel.org/wpassgen</a></p>
