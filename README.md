@@ -22,7 +22,7 @@
 </ul>
 <p><b>Demo</b> con algunas opciones implementadas en <a href="https://wikitel.org/wpassgen" target="_blank">wikitel.org/wpassgen</a></p>
 <h2>3. Versión</h2>
-<p>La última versión estable es la v0.1.4</p>
+<p>La última versión estable es la v0.1.5, compatible tanto con Python 2.x como Python 3.x</p>
 <h2>4. Autores</h2>
 <p>Código desarrollado por <a href="https://twitter.com/jmformoso" target="_blank">@jmformoso</a> con la colaboración de <a href="https://twitter.com/_spalacios" target="_blank">@_spalacios</a>
 <h2>5. Copyright y licencia</h2>
