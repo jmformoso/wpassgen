@@ -1,5 +1,5 @@
 # -*- coding: utf-8
-# v0.1.4
+# v0.1.5
 # by jtmeros
 
 import sys, os, string, random
@@ -55,4 +55,4 @@ else:
 	longitud = 10 # longitud por defecto
 	
 
-print ''.join(random.choice(caracteres) for i in range(longitud)) # muestra la contraseña
+print (''.join(random.choice(caracteres) for i in range(longitud))) # muestra la contraseña
