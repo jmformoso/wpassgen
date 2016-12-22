@@ -6,19 +6,20 @@ import sys, os, string, random
 
 caracteres = string.ascii_letters + string.digits + '!@#$%+&*-' # string que incluye letras, números y caracteres especiales
 random.seed = (os.urandom(1024))
+longitud = 10 # longitud por defecto
+numargv = 1 # primer argv como el opcional (en caso de que sea necesario)
 
 
 if len(sys.argv) >= 2:
 
-	numargv = 1 # primer argv como el opcional
+	if len(sys.argv) >= 3:
+		numargv = 2 # el argv segundo es el opcional
 	
 
 	try: # si no se introduce un número en el segundo argumento
 		longitud = int(sys.argv[1]) # longitud elegida por el usuario
-		if len(sys.argv) >= 3:
-			numargv = 2 # el argv segundo es el opcional
-	except:
-		longitud = 10 # longitud por defecto
+	except ValueError:
+		pass
 		
 	
 	if (str(sys.argv[numargv]) == "-l"):
@@ -50,9 +51,6 @@ if len(sys.argv) >= 2:
 
 	if (str(sys.argv[numargv]) == "-ls"):
 		caracteres = string.ascii_letters + '!@#$%+&*-' # letras y símbolos
-
-else:
-	longitud = 10 # longitud por defecto
 	
 
 print (''.join(random.choice(caracteres) for i in range(longitud))) # muestra la contraseña
