@@ -24,6 +24,6 @@
 <h2>3. Versión</h2>
 <p>La última versión estable es la v0.1.5, compatible tanto con Python 2.x como Python 3.x</p>
 <h2>4. Autores</h2>
-<p>Código desarrollado por <a href="https://twitter.com/jmformoso" target="_blank">@jmformoso</a> con la colaboración de <a href="https://twitter.com/_spalacios" target="_blank">@_spalacios</a>
+<p>Código desarrollado por <a href="https://github.com/jtmeros/" target="_blank">José M. Formoso</a> con la colaboración de <a href="https://github.com/palacios22c/" target="_blank">Saúl Palacios</a>
 <h2>5. Copyright y licencia</h2>
 <p>Este código y su documentación se distribuye bajo licencia Apache 2.0</p>
