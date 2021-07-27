@@ -2,7 +2,7 @@ title: wpassgen
 description: Generador de contraseñas con Python
 google_analytics: UA-71826582-1
 show_downloads: true
-theme: jekyll-theme-architect
+theme: jekyll-theme-modernist
 
 gems:
   - jekyll-mentions
