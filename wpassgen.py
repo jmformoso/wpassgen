@@ -60,4 +60,4 @@ else:
 	longitud = 12 # longitud por defecto
 
 
-print ''.join(random.choice(caracteres) for i in range(longitud)) # muestra la contraseña
+print (''.join(random.choice(caracteres) for i in range(longitud))) # muestra la contraseña
