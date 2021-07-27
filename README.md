@@ -27,3 +27,7 @@
 <p>Código desarrollado por <a href="https://twitter.com/jmformoso" target="_blank">@jmformoso</a> con la colaboración de <a href="https://twitter.com/_spalacios" target="_blank">@_spalacios</a>
 <h2>5. Copyright y licencia</h2>
 <p>Este código y su documentación se distribuye bajo licencia Apache 2.0</p>
+
+[![Twitter Follow](https://img.shields.io/twitter/follow/jmformoso?style=social)](https://twitter.com/jmformoso)
+![GitHub Followers](https://img.shields.io/github/followers/jmformoso?style=social)
+[![Twitter Follow](https://img.shields.io/twitter/follow/wikitel?style=social)](https://twitter.com/wikitel)
