@@ -32,4 +32,4 @@
 [![Twitter Follow](https://img.shields.io/twitter/follow/jmformoso?style=social)](https://twitter.com/jmformoso)
 ![GitHub Followers](https://img.shields.io/github/followers/jmformoso?style=social)
 [![Twitter Follow](https://img.shields.io/twitter/follow/wikitel?style=social)](https://twitter.com/wikitel)
-[![Twitter Follow](https://img.shields.io/twitter/follow/palacios22c?style=social)](https://twitter.com/palacios22c)
+[![Twitter Follow](https://img.shields.io/twitter/follow/_spalacios?style=social)](https://twitter.com/_spalacios)
