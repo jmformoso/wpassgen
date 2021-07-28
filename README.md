@@ -1,5 +1,5 @@
 # Generador de contraseñas
-> by @jmformoso & @palacios22c
+> by @jmformoso & @_spalacios
 
 Simple generador de contraseñas que incluye varias opciones, desde solo números hasta combinaciones de números, letras, símbolos, etc.
 ## 1. Opciones
