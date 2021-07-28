@@ -18,10 +18,10 @@ Simple generador de contraseñas que incluye varias opciones, desde solo número
 
 ## 2. Ejemplos
 
-* $ python wpassgen.py -> devuelve una contraseña de 12 caracteres (por defecto) de longitud con letras, números y símbolos.
-* $ python wpassgen.py 11 -> devuelve una contraseña de 11 caracteres de longitud con letras, números y símbolos.
-* $ python wpassgen.py 13 -n -> devuelve una contraseña de 13 con solo números.
-* $ python wpassgen.py -n -> devuelve una contraseña de 12 caracteres (por defecto) de longitud con solo números.
+* ```$ python wpassgen.py``` -> devuelve una contraseña de 12 caracteres (por defecto) de longitud con letras, números y símbolos.
+* ```$ python wpassgen.py 11``` -> devuelve una contraseña de 11 caracteres de longitud con letras, números y símbolos.
+* ```$ python wpassgen.py 13 -n``` -> devuelve una contraseña de 13 con solo números.
+* ```$ python wpassgen.py -n``` -> devuelve una contraseña de 12 caracteres (por defecto) de longitud con solo números.
 
 Demo con algunas opciones implementadas en [wikitel.org/wpassgen](https://wikitel.org/wpassgen)
 
