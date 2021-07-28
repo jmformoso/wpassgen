@@ -29,7 +29,9 @@
 <h2>5. Copyright y licencia</h2>
 <p>Este código y su documentación se distribuye bajo licencia Apache 2.0</p>
 
+### 6. Redes sociales
+
 [![Twitter Follow](https://img.shields.io/twitter/follow/jmformoso?style=social)](https://twitter.com/jmformoso)
-![GitHub Followers](https://img.shields.io/github/followers/jmformoso?style=social)
+[![GitHub Followers]](https://img.shields.io/github/followers/jmformoso?style=social)
 [![Twitter Follow](https://img.shields.io/twitter/follow/wikitel?style=social)](https://twitter.com/wikitel)
 [![Twitter Follow](https://img.shields.io/twitter/follow/_spalacios?style=social)](https://twitter.com/_spalacios)
