@@ -23,7 +23,7 @@ Simple generador de contraseñas que incluye varias opciones, desde solo número
 * ```$ python wpassgen.py 13 -n``` -> devuelve una contraseña de 13 con solo números.
 * ```$ python wpassgen.py -n``` -> devuelve una contraseña de 12 caracteres (por defecto) de longitud con solo números.
 
-Demo con algunas opciones implementadas en [wikitel.org/wpassgen](https://wikitel.org/wpassgen)
+Demo con algunas opciones implementadas en [wikitel.org/wpassgen](https://www.wikitel.org/seguridad/password)
 
 ## 3. Versión
 La última versión estable es la v0.2.0, compatible tanto con Python 2.x como Python 3.x
