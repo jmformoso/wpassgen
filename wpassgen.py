@@ -1,5 +1,5 @@
 # -*- coding: utf-8
-# v0.2.0
+# v0.2.1
 # by jtmeros
 
 import sys, os, string, random
@@ -26,35 +26,38 @@ if len(sys.argv) >= 2:
 	if (str(sys.argv[numargv]) == "-l"):
 		caracteres = string.ascii_letters # solo letras
 
-	if (str(sys.argv[numargv]) == "-ll"):
+	elif (str(sys.argv[numargv]) == "-ll"):
 		caracteres = string.ascii_lowercase #solo letras minúsculas
 
-	if (str(sys.argv[numargv]) == "-lL"):
+	elif (str(sys.argv[numargv]) == "-lL"):
 		caracteres = string.ascii_uppercase #solo letras mayúsculas
 
-	if (str(sys.argv[numargv]) == "-n"):
+	elif (str(sys.argv[numargv]) == "-n"):
 		caracteres = string.digits # solo números
 
-	if (str(sys.argv[numargv]) == "-s"):
+	elif (str(sys.argv[numargv]) == "-s"):
 		caracteres = especialesGeneral # solo símbolos
 
-	if (str(sys.argv[numargv]) == "-p"):
+	elif (str(sys.argv[numargv]) == "-p"):
 		caracteres = string.punctuation # solo signos puntuación
 
-	if (str(sys.argv[numargv]) == "-h"):
+	elif (str(sys.argv[numargv]) == "-h"):
 		caracteres = string.hexdigits # hexadecimal
 
-	if (str(sys.argv[numargv]) == "-nl"):
+	elif (str(sys.argv[numargv]) == "-nl"):
 		caracteres = string.digits + string.ascii_letters # letras y números
 
-	if (str(sys.argv[numargv]) == "-ns"):
+	elif (str(sys.argv[numargv]) == "-ns"):
 		caracteres = string.digits + especialesGeneral # números y símbolos
 
-	if (str(sys.argv[numargv]) == "-ls"):
+	elif (str(sys.argv[numargv]) == "-ls"):
 		caracteres = string.ascii_letters + especialesGeneral # letras y símbolos
 
-	if (str(sys.argv[numargv]) == "-sy"):
+	elif (str(sys.argv[numargv]) == "-sy"):
 		caracteres = string.ascii_letters + string.digits + string.hexdigits + especialesSymfony # todo con caracteres aceptados por Symfony
+	
+	else:
+		caracteres = string.ascii_letters + string.digits + especialesGeneral # string que incluye letras, números y caracteres especiales
 
 else:
 	longitud = 12 # longitud por defecto
