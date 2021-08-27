@@ -5,7 +5,7 @@
 import sys, os, string, random
 
 especialesGeneral = '!@#$%&*-'
-especialesSymfony = '%&-;[]()'
+especialesSymfony = '%&-;[]'
 caracteres = string.ascii_letters + string.digits + especialesGeneral # string que incluye letras, números y caracteres especiales
 random.seed = (os.urandom(1024))
 
