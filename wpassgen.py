@@ -2,65 +2,41 @@
 # v0.2.1
 # by jtmeros
 
-import sys, os, string, random
+import sys
+import os
+import string
+import random
 
-especialesGeneral = '!@#$%&*-'
-especialesSymfony = '%&-;[]'
-caracteres = string.ascii_letters + string.digits + especialesGeneral # string que incluye letras, números y caracteres especiales
-random.seed = (os.urandom(1024))
+especiales_general = '!@#$%&*-'
+especiales_symfony = '%&-;[]'
+caracteres = string.ascii_letters + string.digits + especiales_general
+random.seed(os.urandom(1024))
 
+longitud = 12
+opcion = None
 
 if len(sys.argv) >= 2:
+    try:
+        longitud = int(sys.argv[1])
+        if len(sys.argv) >= 3:
+            opcion = sys.argv[2]
+    except ValueError:
+        opcion = sys.argv[1]
 
-	numargv = 1 # primer argv como el opcional
+if opcion:
+    opciones = {
+        "-l": string.ascii_letters,
+        "-ll": string.ascii_lowercase,
+        "-lL": string.ascii_uppercase,
+        "-n": string.digits,
+        "-s": especiales_general,
+        "-p": string.punctuation,
+        "-h": string.hexdigits,
+        "-nl": string.digits + string.ascii_letters,
+        "-ns": string.digits + especiales_general,
+        "-ls": string.ascii_letters + especiales_general,
+        "-sy": string.ascii_letters + string.digits + string.hexdigits + especiales_symfony
+    }
+    caracteres = opciones.get(opcion, caracteres)
 
-
-	try: # si no se introduce un número en el segundo argumento
-		longitud = int(sys.argv[1]) # longitud elegida por el usuario
-		if len(sys.argv) >= 3:
-			numargv = 2 # el argv segundo es el opcional
-	except:
-		longitud = 12 # longitud por defecto
-
-
-	if (str(sys.argv[numargv]) == "-l"):
-		caracteres = string.ascii_letters # solo letras
-
-	elif (str(sys.argv[numargv]) == "-ll"):
-		caracteres = string.ascii_lowercase #solo letras minúsculas
-
-	elif (str(sys.argv[numargv]) == "-lL"):
-		caracteres = string.ascii_uppercase #solo letras mayúsculas
-
-	elif (str(sys.argv[numargv]) == "-n"):
-		caracteres = string.digits # solo números
-
-	elif (str(sys.argv[numargv]) == "-s"):
-		caracteres = especialesGeneral # solo símbolos
-
-	elif (str(sys.argv[numargv]) == "-p"):
-		caracteres = string.punctuation # solo signos puntuación
-
-	elif (str(sys.argv[numargv]) == "-h"):
-		caracteres = string.hexdigits # hexadecimal
-
-	elif (str(sys.argv[numargv]) == "-nl"):
-		caracteres = string.digits + string.ascii_letters # letras y números
-
-	elif (str(sys.argv[numargv]) == "-ns"):
-		caracteres = string.digits + especialesGeneral # números y símbolos
-
-	elif (str(sys.argv[numargv]) == "-ls"):
-		caracteres = string.ascii_letters + especialesGeneral # letras y símbolos
-
-	elif (str(sys.argv[numargv]) == "-sy"):
-		caracteres = string.ascii_letters + string.digits + string.hexdigits + especialesSymfony # todo con caracteres aceptados por Symfony
-	
-	else:
-		caracteres = string.ascii_letters + string.digits + especialesGeneral # string que incluye letras, números y caracteres especiales
-
-else:
-	longitud = 12 # longitud por defecto
-
-
-print (''.join(random.choice(caracteres) for i in range(longitud))) # muestra la contraseña
+print(''.join(random.choice(caracteres) for _ in range(longitud)))
